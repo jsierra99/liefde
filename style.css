@@ -1,0 +1,228 @@
+body
+{
+    margin: 0;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    height: 65px;
+    padding: 0 0 10px 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul
+{
+    padding: 10px 30px 0 0;
+}
+
+nav ul li
+{
+    display: inline;
+    list-style: none;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover
+{
+    color: red;
+}
+
+.container
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+img.enjoy
+{
+    width: 100%;
+}
+
+section.home
+{
+    margin-top: 100px;
+}
+
+section.home h1
+{
+    font-size: 2.5rem;
+    border-bottom: red solid 3px;
+    text-align: center;
+}
+
+section.home h2
+{
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+section.home p
+{
+    font-size: 1.1rem;
+    background: red;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+section.home .info
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    grid-gap: 20px;
+}
+
+section.fun .many
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    border-bottom: red solid 3px;
+}
+
+.many i 
+{
+    background: red;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+section.fun h2
+{
+    border-top: red solid 3px;
+    padding-top: 5px;
+}
+section.enjoy .needs
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+section.contact
+{
+    margin-top: .5rem;
+}
+
+.btn
+{
+    display: inline-block;
+    color: #fff;
+    background: red;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover
+{
+    background: darkred;
+}
+
+.in_touch-form .forms
+{
+    margin: 0.75rem 0.75rem 0.75rem 0;
+}
+
+.in_touch-form .forms label
+{
+    display: block;
+}
+
+.in_touch-form .forms input,
+.in_touch-form .forms textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.contact
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    padding-top: 20px;
+}
+
+footer
+{
+    background: black;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media(max-width: 500px)
+{
+    .container
+    {
+        padding: 0 20px;
+    }
+    
+    header nav
+    {
+        display: none;
+    }
+
+    header img.logo
+    {
+       margin: 0 auto;
+    }
+
+    h1
+    {
+        display: none;
+    }
+
+    .home h2
+    {
+        text-align: center;
+    }
+
+    section.home .info 
+    {
+        grid-template-columns: 1fr;
+        font-size: .75rem;
+    }
+
+    section.fun .many
+    {
+        grid-template-columns: 1fr;
+    }
+
+    section.enjoy h3
+    {
+        text-align: center;
+    }
+
+    section.enjoy .needs
+    {
+        grid-template-columns: 1fr;
+    }
+
+    section.contact 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    section.contact h3
+    {
+        text-align: center;
+    }
+}
+
